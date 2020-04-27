@@ -84,6 +84,13 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
     public function haveArchiveArtefacts();
 
     /**
+     * Return's the TRUE if the import artefacts have to be cleared after the import process.
+     *
+     * @return boolean TRUE if the import artefacts have to be cleared
+     */
+    public function haveClearArtefacts();
+
+    /**
      * The directory where the archives will be stored.
      *
      * @return string The archive directory
