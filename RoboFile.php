@@ -179,6 +179,11 @@ class RoboFile extends \Robo\Tasks
      */
     public function build()
     {
+
+        // stop the build on first failure of a task
+        $this->stopOnFail(true);
+
+        // process the build
         $this->clean();
         $this->prepare();
         $this->runCs();
