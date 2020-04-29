@@ -1,3 +1,13 @@
+# Version 4.0.0
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Add new ConfigurationFactoryInterface
+
 # Version 3.0.0
 
 ## Bugfixes
