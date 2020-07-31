@@ -54,7 +54,7 @@ interface ParamsConfigurationInterface
      * @param string $name         The name of the param to return
      * @param mixed  $defaultValue The default value if the param doesn't exists
      *
-     * @return string The requested param
+     * @return mixed The requested param
      * @throws \Exception Is thrown, if the requested param is not available
      */
     public function getParam($name, $defaultValue = null);
