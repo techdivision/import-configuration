@@ -20,10 +20,6 @@
 
 namespace TechDivision\Import\Configuration;
 
-use TechDivision\Import\Configuration\CsvConfigurationInterface;
-use TechDivision\Import\Configuration\ParamsConfigurationInterface;
-use TechDivision\Import\Configuration\DatabaseConfigurationInterface;
-
 /**
  * The interface for the import configuration.
  *
@@ -391,12 +387,13 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
     /**
      * Return's the mapped finder for the passed key.
      *
-     * @param string $key The key of the finder to map
+     * @param string      $key            The key of the finder to map
+     * @param string|null $entityTypeCode The entity type code to return the finder mappings for
      *
      * @return string The mapped finder name
      * @throws \InvalidArgumentException Is thrown if the mapping with passed key can not be resolved
      */
-    public function getFinderMappingByKey($key);
+    public function getFinderMappingByKey($key, $entityTypeCode = null);
 
     /**
      * Load the default values from the configuration.

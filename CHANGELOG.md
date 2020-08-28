@@ -1,3 +1,13 @@
+# Version 5.0.0
+
+## Bugfixes
+
+* None
+
+## Features
+
+* Fixed #PAC-206: Prevent finder mappings of different libraries to be overwritten
+
 # Version 4.0.0
 
 ## Bugfixes
