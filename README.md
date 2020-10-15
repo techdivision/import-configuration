@@ -8,3 +8,5 @@
  [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/techdivision/import-configuration/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/techdivision/import-configuration/?branch=master)
 
 Interfaces for all Pacemaker import configuration implementations.
+
+Please visit the Pacemaker [website](https://pacemaker.techdivision.com) or our [documentation](https://docs.met.tdintern.de/pacemaker/1.3/) for additional information
