@@ -6,7 +6,7 @@
 
 ## Features
 
-* None
+* Extend interface with empty attribute value getter
 
 # Version 4.0.0
 

@@ -419,4 +419,18 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return array An array with the matching subjects
      */
     public function getSubjects(array $filters = array());
+
+    /**
+     * Return's the prefix for the move files subject.
+     *
+     * @return string The prefix for the move files subject
+     */
+    public function getMoveFilesPrefix();
+
+    /**
+     * Get the definition from an empty value
+     *
+     * @return string A string with constant for empty attribute value
+     */
+    public function getEmptyAttributeValueConstant();
 }
