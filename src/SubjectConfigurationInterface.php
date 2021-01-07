@@ -113,7 +113,7 @@ interface SubjectConfigurationInterface extends ParamsConfigurationInterface, Im
     /**
      * Return's the reference to the configuration instance.
      *
-     * @return \TechDivision\Import\ConfigurationInterface The configuration instance
+     * @return \TechDivision\Import\Configuration\ConfigurationInterface The configuration instance
      */
     public function getConfiguration();
 
@@ -260,7 +260,7 @@ interface SubjectConfigurationInterface extends ParamsConfigurationInterface, Im
     /**
      * Return's the execution context configuration for the actualy plugin configuration.
      *
-     * @return \TechDivision\Import\ExecutionContextInterface The execution context to use
+     * @return \TechDivision\Import\Configuration\ExecutionContextInterface The execution context to use
      */
     public function getExecutionContext();
 
