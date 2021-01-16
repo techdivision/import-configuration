@@ -56,7 +56,7 @@ interface CacheConfigurationInterface
     /**
      * Return's the reference to the configuration instance.
      *
-     * @return \TechDivision\Import\ConfigurationInterface The configuration instance
+     * @return \TechDivision\Import\Configuration\ConfigurationInterface The configuration instance
      */
     public function getConfiguration();
 }
