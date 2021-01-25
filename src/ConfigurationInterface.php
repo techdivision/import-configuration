@@ -184,6 +184,13 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
     public function getMultipleValueDelimiter();
 
     /**
+     * Return's the delimiter character for categories, default value is comma (/).
+     *
+     * @return string The delimiter character for categories
+     */
+    public function getCategoryDelimiter();
+
+    /**
      * Queries whether or not strict mode is enabled or not, default is TRUE.
      *
      * @return boolean TRUE if strict mode is enabled, else FALSE
