@@ -429,9 +429,41 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
     public function getMoveFilesPrefix();
 
     /**
+     * Set's the first subject of the actual import with a prefix defined.
+     *
+     * @param \TechDivision\Import\Configuration\SubjectConfigurationInterface $firstPrefixedSubject The subject configuration
+     *
+     * @return void
+     */
+    public function setFirstPrefixedSubject(SubjectConfigurationInterface $firstPrefixedSubject);
+
+    /**
+     * Return's the first subject of the actual import with a prefix defined.
+     *
+     * @return \TechDivision\Import\Configuration\SubjectConfigurationInterface|null The subject configuration
+     */
+    public function getFirstPrefixedSubject();
+
+    /**
      * Get the definition from an empty value
      *
      * @return string A string with constant for empty attribute value
      */
     public function getEmptyAttributeValueConstant();
+
+    /**
+     * Sets the explict name of a file that has to be imported.
+     *
+     * @param string $filename The explicit filename
+     *
+     * @return void
+     */
+    public function setFilename($filename);
+
+    /**
+     * Load the explicit name of the file that has to be imported.
+     *
+     * @return string The explicit filename
+     */
+    public function getFilename();
 }
