@@ -29,42 +29,42 @@ interface FileResolverConfigurationInterface
    /**
     * The default prefix sequence of the import files.
     *
-    * @var string
+    * @var string
     */
     const DEFAULT_PREFIX = '.*';
 
     /**
      * The default filename sequence of the import files.
      *
-     * @var string
+     * @var string
      */
     const DEFAULT_FILENAME = '.*';
 
     /**
      * The counter sequence of the import files.
      *
-     * @var string
+     * @var string
      */
     const DEFAULT_COUNTER = '\d+';
 
     /**
      * The file suffix for import files.
      *
-     * @var string
+     * @var string
      */
     const DEFAULT_SUFFIX = 'csv';
 
     /**
      * The file suffix for OK file.
      *
-     * @var string
+     * @var string
      */
     const DEFAULT_OK_FILE_SUFFIX = 'ok';
 
     /**
      * The separator char for the elements of the file.
      *
-     * @var string
+     * @var string
      */
     const DEFAULT_ELEMENT_SEPARATOR = '_';
 

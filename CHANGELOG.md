@@ -7,6 +7,7 @@
 ## Features
 
 * Extend interface with empty attribute value getter
+* Extend interface for import explizit filename
 
 # Version 4.0.0
 
