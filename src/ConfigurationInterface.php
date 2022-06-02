@@ -466,4 +466,20 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return string The explicit filename
      */
     public function getFilename();
+
+    /**
+     * Set's the array with the black List.
+     *
+     * @param array $blackListings The Black Listing
+     *
+     * @return void
+     */
+    public function setBlackListings(array $blackListings);
+
+    /**
+     * Return's the array with the black List.
+     *
+     * @return array The Black List
+     */
+    public function getBlackListings();
 }
