@@ -482,4 +482,20 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return array The Black List
      */
     public function getBlackListings();
+
+    /**
+     * Set's the Magento config to be used.
+     *
+     * @param array $config The entity type code
+     *
+     * @return void
+     */
+    public function setMagentoConfig($config);
+
+    /**
+     * Get's the Magento config to be used.
+     *
+     * @return array
+     */
+    public function getMagentoConfig();
 }
