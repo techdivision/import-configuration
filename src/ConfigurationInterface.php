@@ -482,4 +482,20 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return array The Black List
      */
     public function getBlackListings();
+
+    /**
+     * Get the api Data from Config
+     *
+     * @return array
+     */
+    public function getApiData();
+
+    /**
+     * Set the api Data from Config
+     *
+     * @param array $apiData apidata
+     *
+     * @return void
+     */
+    public function setApiData($apiData);
 }
