@@ -498,4 +498,28 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return void
      */
     public function setApiData($apiData);
+
+    /**
+     * @return bool
+     */
+    public function isConfigOutput();
+
+    /**
+     * @param bool $configOutput the configuration files
+     *
+     * @return void
+     */
+    public function setConfigOutput(bool $configOutput);
+
+    /**
+     * @param array $configurationFiles The configuration files
+     *
+     * @return void
+     */
+    public function setConfigurationFiles(array $configurationFiles);
+
+    /**
+     * @return array
+     */
+    public function getConfigurationFiles();
 }
