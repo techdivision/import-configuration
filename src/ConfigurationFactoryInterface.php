@@ -53,6 +53,13 @@ interface ConfigurationFactoryInterface
     public function factoryFromDirectories($installationDir, $defaultConfigurationDir = 'etc', array $directories = array(), $format = 'json', $params = null, $paramsFile = null);
 
     /**
+     * @param array  $directories An array with diretories to parse and merge
+     * @param string $format      The format of the configuration file, either one of json, yaml or xml
+     * @return array
+     */
+    public function getConfigurationFiles(array $directories = array(), $format = 'json');
+
+    /**
      * Factory implementation to create a new initialized configuration instance.
      *
      * @param string $data       The configuration data
