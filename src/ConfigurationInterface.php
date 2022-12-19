@@ -522,4 +522,20 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
      * @return array
      */
     public function getConfigurationFiles();
+
+    /**
+     * Get the ignored attribute value from Config
+     *
+     * @return array
+     */
+    public function getIgnoreAttributeValue();
+
+    /**
+     * Set the ignored attribute value from Config
+     *
+     * @param array $ignoreAttributeValueOnUpdate ignoreAttributeValueOnUpdate
+     *
+     * @return void
+     */
+    public function setIgnoreAttributeValue($ignoreAttributeValueOnUpdate);
 }
