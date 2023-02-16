@@ -136,6 +136,13 @@ interface ConfigurationInterface extends CsvConfigurationInterface, ParamsConfig
     public function getInstallationDir();
 
     /**
+     * Return's the Magento configuration directory.
+     *
+     * @return string The Magento configuration directory
+     */
+    public function getEtcDir();
+
+    /**
      * Return's the source directory that has to be watched for new files.
      *
      * @return string The source directory
