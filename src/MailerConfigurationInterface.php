@@ -1,7 +1,7 @@
 <?php
 
 /**
- * TechDivision\Import\Configuration\SwiftMailerConfigurationInterface
+ * TechDivision\Import\Configuration\MailerConfigurationInterface
  *
  * PHP version 7
  *
@@ -14,8 +14,10 @@
 
 namespace TechDivision\Import\Configuration;
 
+use TechDivision\Import\Configuration\Mailer\TransportConfigurationInterface;
+
 /**
- * The swift mailer configuration interface.
+ * The mailer configuration interface.
  *
  * @author    Tim Wagner <t.wagner@techdivision.com>
  * @copyright 2020 TechDivision GmbH <info@techdivision.com>
@@ -23,20 +25,20 @@ namespace TechDivision\Import\Configuration;
  * @link      https://github.com/techdivision/import-configuration
  * @link      http://www.techdivision.com
  */
-interface SwiftMailerConfigurationInterface extends ParamsConfigurationInterface
+interface MailerConfigurationInterface extends ParamsConfigurationInterface
 {
 
     /**
-     * Return's the DI ID used to create the swift mailer instance.
+     * Return's the DI ID used to create the mailer instance.
      *
      * @return string The DI ID
      */
     public function getId();
 
     /**
-     * Return's the swift mailer transport configuration to use.
+     * Return's the mailer transport configuration to use.
      *
-     * @return \TechDivision\Import\Configuration\SwiftMailer\TransportConfigurationInterface The transport configuration to use
+     * @return TransportConfigurationInterface The transport configuration to use
      */
     public function getTransport();
 }

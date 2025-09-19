@@ -14,6 +14,7 @@
 
 namespace TechDivision\Import\Configuration\Logger;
 
+use TechDivision\Import\Configuration\MailerConfigurationInterface;
 use TechDivision\Import\Configuration\ParamsConfigurationInterface;
 
 /**
@@ -43,9 +44,9 @@ interface HandlerConfigurationInterface extends ParamsConfigurationInterface
     public function getFormatter();
 
     /**
-     * Return's the swift mailer configuration to use.
+     * Return's the mailer configuration to use.
      *
-     * @return \TechDivision\Import\Configuration\SwiftMailerConfigurationInterface The swift mailer configuration to use
+     * @return MailerConfigurationInterface The mailer configuration to use
      */
-    public function getSwiftMailer();
+    public function getMailer();
 }
