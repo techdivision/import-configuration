@@ -1,7 +1,7 @@
 <?php
 
 /**
- * TechDivision\Import\Configuration\SwiftMailer\MessageConfigurationInterface
+ * TechDivision\Import\Configuration\Mailer\TransportConfigurationInterface
  *
  * PHP version 7
  *
@@ -12,10 +12,12 @@
  * @link      http://www.techdivision.com
  */
 
-namespace TechDivision\Import\Configuration\SwiftMailer;
+namespace TechDivision\Import\Configuration\Mailer;
+
+use TechDivision\Import\Configuration\ParamsConfigurationInterface;
 
 /**
- * The swift mailer message configuration interface.
+ * The mailer transport configuration interface.
  *
  * @author    Tim Wagner <t.wagner@techdivision.com>
  * @copyright 2020 TechDivision GmbH <info@techdivision.com>
@@ -23,13 +25,6 @@ namespace TechDivision\Import\Configuration\SwiftMailer;
  * @link      https://github.com/techdivision/import-configuration
  * @link      http://www.techdivision.com
  */
-interface MessageConfigurationInterface
+interface TransportConfigurationInterface extends ParamsConfigurationInterface
 {
-
-    /**
-     * Return's the swift mailer message factory used to create he instance.
-     *
-     * @return string The swift mailer message factory
-     */
-    public function getMessageFactory();
 }
