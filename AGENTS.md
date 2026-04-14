@@ -67,6 +67,51 @@ PluginConfigurationInterface::getClass(): string
 - **Neue Methoden**: Müssen in allen Implementierungen hinzugefügt werden
 - **Vorsicht**: Basis für JMS-Konfiguration und andere Implementierungen
 
+## Häufige Use Cases
+
+### XML-Konfiguration-Struktur (implementiert von JMS)
+```xml
+<configuration>
+  <operations>
+    <operation name="product">
+      <plugins>
+        <plugin name="validator" class="Validator" />
+        <plugin name="converter" class="Converter" />
+      </plugins>
+    </operation>
+  </operations>
+</configuration>
+```
+
+### Szenarien
+1. **Multi-Format Support**: XML, YAML, JSON Konfigurationen
+2. **Plugin-Chain-Konfiguration**: Dynamische Plugin-Orchestrierung
+3. **Per-Operation-Settings**: Unterschiedliche Configs pro Operation
+
+## Performance-Überlegungen
+
+- **Interface-Overhead**: Minimal - nur Getter-Calls ohne Parsing
+- **Hierarchie-Depth**: Typsicherheit durch Interfaces statt Strings
+- **Memory**: Konfiguration wird gecacht - nur einmalige Parse
+- **Extensibility**: Neue Operation-Typen ohne Code-Änderungen
+
+## Verwandte Module
+
+- **import-configuration-jms**: Implementiert mit JMS-Serialisierung
+- **import**: Core Framework nutzt Configuration-Interfaces
+- **import-configuration** ← **diese Datei** (nur Interfaces!)
+
+## Troubleshooting & FAQ
+
+**Q: Wo ist die konkrete Implementierung?**
+- A: Hier nicht! Schau in `import-configuration-jms` für JMS-basierte Implementation.
+
+**Q: Kann ich eigene Configuration-Implementierung bauen?**
+- A: Ja! Implementiere `ConfigurationInterface` und alle Sub-Interfaces in diesem Modul.
+
+**Q: Interface-Änderung - was muss ich updaten?**
+- A: Alle Implementierungen (z.B. JMS, YAML, JSON) müssen angepasst werden!
+
 ## Bekannte Einschränkungen
 
 - **Nur Interfaces**: Keine konkrete Implementierung
